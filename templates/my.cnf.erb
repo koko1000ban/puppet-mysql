@@ -8,3 +8,7 @@ log-error=<%= scope.lookupvar "mysql::config::logerror" %>
 port=<%= scope.lookupvar "mysql::config::port" %>
 socket=<%= scope.lookupvar "mysql::config::socket" %>
 max_allowed_packet=1073741824
+skip-name-resolve
+innodb_large_prefix
+innodb_file_format = Barracuda
+innodb_file_per_table
