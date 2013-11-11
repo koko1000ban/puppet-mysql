@@ -13,5 +13,5 @@ class mysql::config {
   $logdir     = "${boxen::config::logdir}/mysql"
   $logerror   = "${logdir}/error.log"
   $port       = 3306
-  $socket     = "${datadir}/socket"
+  $socket     = "/tmp/mysql.sock"
 }
